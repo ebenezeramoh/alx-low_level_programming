@@ -4,16 +4,20 @@
  * Return: - Always return(0)
  *
  */
-void print_alphabet_x10(void) {
-  int i, j;
-  char c;
-  
-  for (i = 0; i < 10; i++) {
-    c = 'a';
-    for (j = 0; j < 26; j++) {
-      _putchar(c);
-      c++;
-    }
-    _putchar('\n');
-  }
+void print_alphabet_x10(void)
+{
+	char a;
+	int counter = 1;
+
+	while (counter <= 10)
+	{
+		a = 'a';
+		while (a <= 'z')
+		{
+		_putchar(a);
+		a++;
+		}
+		_putchar('\n');
+		counter++;
+	}
 }
